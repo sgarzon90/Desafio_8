@@ -1,0 +1,226 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', serif;
+}
+
+main {
+    background-image: url("../img/bg.jpg");
+    font-size: 1.3em;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contenedor {
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 12% auto;
+}
+
+.titulo-principal {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 3.3vw;
+    color: white;
+    background-image: linear-gradient(90deg, rgb(102, 69, 3), rgb(102, 68, 1, 0)); /* #664503 Café claro */
+    text-shadow: 2px 2px 4px #000000;
+    box-shadow: 5px 10px 70px 5px rgba(69, 45, 1, 255) inset; /* #452D01 Café Oscuro */
+    border-radius: 8px;
+}
+
+.titulo-principal img {
+    width: 40%;
+}
+
+fieldset {
+    border: 3px solid rgba(69, 45, 10, 255); /*#452D0A Café Oscuro*/
+    border-radius: 10px;
+    box-shadow: 5px 10px 70px 5px rgba(69, 45, 1, 255) inset; /* #452D01 Café Oscuro */
+}
+
+
+legend {
+    font-weight: bold;
+    text-transform: capitalize;
+    color: white;
+    padding: 5px;
+    margin-left: 10px;
+    background-color: rgba(69, 45, 1, 255); /* #452D01 Café Oscuro */
+    border-radius: 5px;
+}
+
+legend img {
+    height: 30px;
+}
+
+h1 img {
+    width: 40%;
+    height: auto;
+}
+
+.separacion {
+    width: 40%;
+    height: 20px;
+    margin: 18px auto;
+    background-image: conic-gradient(rgba(69, 45, 1, 255) 30%, transparent 0); /* #452D01 Café Oscuro */
+    background-size: 20px;
+}
+
+.caja {
+    display: grid;
+    grid-template-columns: 60%;
+    justify-content: start;
+    margin: 5px;
+}
+
+.checkbox {
+    font-weight: bolder;
+    text-align: center;
+    padding: 10px;
+    color: black
+}
+
+
+input[type=text],
+input[type=email],
+select,
+textarea {
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px solid rgba(50, 56, 28, 255); /*#32381C Verde militar*/
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: transparent;
+    color: black;
+    font-weight: bolder;
+}
+
+.texto {
+    font-weight: bold;
+}
+
+textarea {
+    height: 20vh;
+    resize: vertical;
+}
+
+.condiciones {
+    padding: 25px;
+    text-align: center;
+}
+
+.condiciones:hover {
+    text-transform: capitalize;
+}
+
+.boton {
+    text-align: center;
+}
+
+.btn {
+    color: rgba(69, 45, 1, 255); /* #452D01 Café Oscuro */
+    font-weight: bold;
+    background-color: rgba(248, 245, 226, 255); /* #F8F5E2 Veige*/
+    border: 2px dashed black;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgba(69, 45, 1, 255); /* #452D01 Café Oscuro */
+    color: white;
+}
+
+.btn-style {
+    color: rgba(69, 45, 1, 255); /* #452D01 Café Oscuro */
+    font-weight: bold;
+    background-color: rgba(248, 245, 226, 255); /* #F8F5E2 Veige*/
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 2px 0 5px 12px;
+    cursor: pointer;
+}
+
+.btn-style:hover {
+    background-color: rgba(69, 45, 1, 255); /* #452D01 Café Oscuro */
+    color: white;
+}
+
+@media(max-width: 900px) {
+    .contenedor {
+        display: grid;
+        justify-content: center;
+        padding: 30px;
+        grid-template-columns: 80%;
+    }
+
+    .titulo-principal {
+        font-size: 1.5em;
+    }
+
+    .titulo-principal img {
+        width: 20%;
+    }
+
+    legend {
+        text-align: center;
+    }
+
+    legend img {
+        width: 10%;
+        height: auto;
+    }
+
+    .caja {
+        grid-template-columns: 80%;
+        justify-content: center;
+        margin: 5px;
+    }
+
+}
+
+
+@media(max-width: 380px) {
+    .contenedor {
+        display: grid;
+        justify-content: center;
+        padding: 30px;
+        grid-template-columns: 80%;
+    }
+
+    .titulo-principal {
+        font-size: 1.5em;
+    }
+
+    .titulo-principal img {
+        width: 20%;
+    }
+
+    legend {
+        text-align: center;
+    }
+
+    legend img {
+        width: 10%;
+        height: auto;
+    }
+
+    .caja {
+        grid-template-columns: 80%;
+        justify-content: center;
+        margin: 5px;
+    }
+
+    .boton {
+        flex-direction: column
+    }
+
+    .btn {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}

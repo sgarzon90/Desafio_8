@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    background-color: #1f2023;
+}
+
+.contenedor {
+    display: grid;
+    justify-content: center;
+    padding: 30px;
+    grid-template-columns: 50%;
+}
+
+.titulo-principal {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: white;
+    border-color: rgba(77, 109, 99, 255) rgba(31, 32, 35, 255); /* #4D6D63 Verde Militar*/
+    border-width: 15px;
+    border-style: solid;
+    margin-bottom: 3%;
+}
+
+fieldset {
+    margin: 20px 0 30px 0;
+    padding: 15px;
+}
+
+
+legend {
+
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: rgba(77, 109, 99, 255); /* #4D6D63 Verde Militar*/
+    color: white;
+
+}
+
+legend img {
+    height: 20px;
+}
+
+.separacion {
+    width: 32%;
+    height: 20px;
+    margin: 18px auto;
+    background-image: radial-gradient(rgb(166, 196, 188) 40%, transparent 0); /* #A6C4BC Verde Claro*/
+    background-size: 19px;
+}
+
+.caja {
+    display: grid;
+    grid-template-columns: 85%;
+    justify-content: center;
+    margin: 5px;
+    background-color: rgba(214, 226, 222, 255); /* #D6E2DE Gris Claro */
+}
+
+.texto {
+    text-align: center;
+}
+
+.texto,
+.texto-checkbox {
+    margin: 10px 0px 8px 0;
+}
+
+.checkbox {
+    padding: 10px;
+    background-color: rgba(214, 226, 222, 255); /* #D6E2DE Gris Claro */
+}
+
+.texto-checkbox {
+    text-align: left;
+}
+
+input {
+    text-align: right;
+}
+
+input[type=text],
+input[type=email],
+select {
+    height: 30px;
+}
+
+
+.radio,
+.boton {
+    display: flex;
+    justify-content: center;
+}
+
+textarea {
+    height: 20vh;
+    resize: vertical;
+}
+
+.condiciones {
+    color: white;
+}
+
+.btn {
+    color: rgba(161, 179, 149, 255); /* #A1B395 Verde Claro*/
+    font-weight: bold;
+    background-color: rgba(43, 61, 55, 255); /* #2B3D37 Verde Oscuro */
+    border: 2px solid rgba(68, 94, 87, 255); /* #445E57 Verde Claro */
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+
+.btn:hover {
+    background-color: rgb(214, 226, 222, 255); /* #D6E2DE Gris Claro */
+    color: rgba(43, 61, 55, 255); /* #2B3D37 Verde Oscuro */
+}
+
+.btn-style {
+    color: rgba(161, 179, 149, 255); /* #A1B395 Verde Claro*/
+    font-weight: bold;
+    background-color: rgba(43, 61, 55, 255); /* #2B3D37 Verde Oscuro */
+    border: 2px solid rgba(68, 94, 87, 255); /* #445E57 Verde Claro */
+    border-radius: 5px;
+    padding: 8px;
+    margin: 5px 0 05px;
+    cursor: pointer;
+}
+
+.btn-style:hover {
+    background-color: rgb(214, 226, 222, 255); /* #D6E2DE Gris Claro */
+    color: rgba(43, 61, 55, 255); /* #2B3D37 Verde Oscuro */
+}
+
+input:focus,
+textarea:focus {
+    background-color: rgba(77, 109, 99, 255); /* #4D6D63 Verde Militar*/
+    color: white;
+}
+
+.caja:focus-within,
+.caja:focus-within .caja,
+.caja:focus-within .texto,
+.caja:focus-within .radio,
+.checkbox:focus-within,
+.checkbox:focus-within .checkbox {
+    background-color: rgba(166, 193, 185, 255); /* #A1B395 Verde Claro*/
+}
+
+.caja:focus-within legend,
+.checkbox:focus-within legend {
+    background-color: rgba(43, 61, 55, 255); /* #2B3D37 Verde Oscuro */
+}
+
+@media(max-width: 900px) {
+    .contenedor {
+        display: grid;
+        justify-content: center;
+        padding: 30px;
+        grid-template-columns: 80%;
+    }
+
+    .titulo-principal {
+        font-size: 2em;
+    }
+}
+
+@media(max-width: 380px) {
+    .contenedor {
+        display: grid;
+        justify-content: center;
+        padding: 30px;
+        grid-template-columns: 80%;
+    }
+
+    .titulo-principal {
+        width: 230px;
+        font-size: 2em;
+    }
+
+    legend {
+        text-align: center;
+    }
+
+
+    .boton {
+        flex-direction: column
+    }
+
+    .btn {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}

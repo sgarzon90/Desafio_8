@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="estilos" rel="stylesheet" href="./css/estilos.css">
+    <!-- <link id="estilos" rel="stylesheet" href="./css/estilos-retro.css"> -->
+    <!-- <link id="estilos" rel="stylesheet" href="./css/estilos-futuro.css"> -->
+    <title>Desafio 8 - Santiago Garzón</title>
+</head>
+
+<body>
+    <main>
+        <div>
+            <button class="btn-style" id="estilo-boton">Cambiar Tema</button>
+        </div>
+        <div class="contenedor">
+
+            <h1 class="titulo-principal">Vení al Gym! <img src="./icons/strong.png" alt="icono de músculo"></h1>
+            <form action="">
+
+                <fieldset class="caja">
+                    <legend><img src="./icons/person.png" alt="icono de persona"> Datos Personales <img
+                            src="./icons/eyes_.png" alt="icono de ojos"></legend>
+
+                    <div class="caja">
+                        <label class="texto" for="nombre">Nombre:*</label>
+                        <input type="text" id="nombre" name="nombre" required maxlength="15" autofocus>
+                    </div>
+                    <div class="caja">
+                        <label class="texto" for="apellido">Apellido:*</label>
+                        <input type="text" id="apellido" name="apellido" required maxlength="20">
+                    </div>
+                    <div class="caja">
+                        <label class="texto" for="documento">Documento:*</label>
+                        <input type="text" id="documento" name="documento" required maxlength="12">
+                    </div>
+                    <div class="caja">
+                        <label class="texto" for="id-nacionalidad">Nacionalidad:*</label>
+                        <select name="pais" id="id-nacionalidad" required>
+                            <option value="Seleccionar" selected>- Seleccionar - </option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Brasilena">Brasileña</option>
+                            <option value="Uruguaya">Uruguaya</option>
+                            <option value="Otra">Otra</option>
+                        </select>
+                    </div>
+                    <div class="caja">
+                        <label class="texto" for="id-observaciones">Contanos un poco de vos...</label>
+                        <textarea name="id-observaciones" id="id-observaciones" maxlength="250"></textarea>
+                    </div>
+                    <label class="texto" for="id-sexo">Sexo:*</label>
+                    <div class="radio">
+                        <label for="sexo"><input type="radio" name="sexo" id="id-sexo0" value="Femenino" checked>
+                          Femenino</label>
+                        <label for="sexo"><input type="radio" name="sexo" id="id-sexo1" value="Masculino">
+                         Masculino</label>
+                        <label for="sexo"><input type="radio" name="sexo" id="id-sexo2" value="Otro">
+                          Otro</label>
+                    </div>
+
+                </fieldset>
+
+                <div class="separacion"></div>
+
+                <fieldset class="caja">
+                    <legend><img src="./icons/phone.png" alt="icono de teléfono"> Datos de Contacto <img
+                            src="./icons/email.png" alt="icono de correo"></legend>
+                    <div class="caja">
+                        <label class="texto" for="telefono">Teléfono:</label>
+                        <input type="text" id="telefono" name="telefono" placeholder="Código de área y número" maxlength="15"><br>
+                    </div>
+                    <div class="caja">
+                        <label class="texto" for="correo">Dirección de correo electrónico:*</label>
+                        <input type="email" id="correo" name="correo" placeholder="Ej: mail@gmail.com" required maxlength="35" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"><br>
+                    </div>
+                </fieldset>
+
+                <div class="separacion"></div>
+
+                <fieldset class="checkbox">
+                    <legend><img src="./icons/bicycle.png" alt="icono de bicicleta"> Actividades <img
+                            src="./icons/sports.png" alt="icono de deportes"> </legend>
+
+                    <div class="checkbox">
+
+                        <label class="texto-checkbox" for="id-actividades">Por favor, indicá cuales actividades te
+                            interesan.</label><br><br>
+                        <label class="texto-checkbox" for="sede-palermo"> Sede Palermo: </label><br><br>
+                        <input type="checkbox" name="act1" id="id-act1"> Básquet
+                        <input type="checkbox" name="act2" id="id-act2"> Boxeo
+                        <input type="checkbox" name="act3" id="id-act3"> Fútbol
+                        <input type="checkbox" name="act4" id="id-act4"> Tenis
+
+                        <br><br>
+
+                        <label class="texto-checkbox" for="sede-Rosario"> Sede Rosario: </label><br><br>
+                        <input type="checkbox" name="act5" id="id-act5"> Básquet
+                        <input type="checkbox" name="act6" id="id-act6"> Fútbol
+                        <input type="checkbox" name="act7" id="id-act7"> Rugby
+                        <input type="checkbox" name="act8" id="id-act8"> Voley
+
+                    </div>
+                </fieldset>
+
+                <div class="condiciones">
+
+                <input type="checkbox" name="condiciones" id="condiciones" required>
+                <label for="condiciones"> Acepto las condiciones*</label><br>
+                <input type="checkbox" name="novedades" id="novedades" checked>
+                <label for="novedades"> Deseo recibir novedades</label><br><br>
+                <label>*: Campo obligatorio.</label><br><br>
+
+                </div>
+
+                <div class="boton">
+                    <input class="btn" type="submit" value="Iniciar Afiliación">
+                    <input class="btn" type="reset" value="Restablecer"><br>
+                </div>
+            </div>
+        </form>
+    </main>
+    <script src="./js/app.js"></script>
+</body>
+</html>
